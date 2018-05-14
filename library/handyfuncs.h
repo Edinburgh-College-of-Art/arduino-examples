@@ -8,7 +8,7 @@
 //==============================================================================
 
 /**
- check the time between cals and flip the state if it is greater tan the given interval
+ checks the time between calls and flip the state if it is greater than the given interval
 
  @param interval in milliseconds
  @param pinNumber output pin number
@@ -18,7 +18,8 @@
 int checkInterval (const unsigned long interval, const int pinNumber)
 {
     const unsigned long currentTime = millis();
-    static unsigned long previousTime = 0;
+    static unsigned long previousTime = 0; // only zero on first call as it is 'static'
+    
     int stateResult = 0;
     if (currentTime - previousTime >= interval)
     {
@@ -43,7 +44,7 @@ int checkInterval (const unsigned long interval, const int pinNumber)
 //==============================================================================
 
 /**
- check analog pin value if time between cals was greater than interval
+ check analog pin value if time between calls is greater than interval
 
  @param interval milliseconds
  @param pinNumber input pin
@@ -51,7 +52,7 @@ int checkInterval (const unsigned long interval, const int pinNumber)
 void checkAnalogPin (const unsigned long interval, const int pinNumber)
 {
     const unsigned long currentTime = millis();
-    static unsigned long prevTime = 0;
+    static unsigned long prevTime = 0; // only zero on first call as it is 'static'
     int stateResult = 0;
     if (currentTime - prevTime >= interval)
     {
