@@ -51,12 +51,12 @@ int connectToHanabi(const char pass[])
       {             
         Serial.print(++connectAttemptCount);
         Serial.println(" Attempt(s)");
-        int status = WiFi.begin(ssid);
+        status = WiFi.begin(ssid);
         delay(wifiWait);
       }
  } 
 
-  if ( status = WL_CONNECTED) 
+  if ( status == WL_CONNECTED ) 
   {
     //===========================================================
     // Print IP Details
