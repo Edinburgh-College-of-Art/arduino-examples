@@ -5,7 +5,8 @@
  * required.
  *
  */
-
+#ifndef ECA_CONNECT_TO_HANABI
+#define ECA_CONNECT_TO_HANABI
 #include <SPI.h>
 #include <WiFi101.h>
 #include "setupM0WiFi.h"
@@ -74,3 +75,5 @@ int connectToHanabi(const char pass[])
   }
   return status; 
 }
+
+#endif /* ECA_CONNECT_TO_HANABI */

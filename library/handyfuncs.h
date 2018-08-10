@@ -4,8 +4,10 @@
  * A selection of punchy and helpful little functions for arduino
  *
  */
-
+#ifndef ECA_HANDY_FUNCS
+#define ECA_HANDY_FUNCS
 //==============================================================================
+
 
 /**
  checks the time between calls and flip the state if it is greater than the given interval
@@ -15,6 +17,7 @@
  @return returns the pin state if the interval has not passed yet or the opposite state
          if it has.
  */
+
 int checkInterval (const unsigned long interval, const int pinNumber)
 {
     const unsigned long currentTime = millis();
@@ -93,3 +96,5 @@ void ramp(int steps, float minV, float maxV, int microDelay)
         delayMicroseconds(microDelay);
     }
 }
+
+#endif /* ECA_HANDY_FUNCS */

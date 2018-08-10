@@ -9,6 +9,8 @@
 *
 */
 
+#ifndef ECA_SETUP_M0_WIFI
+#define ECA_SETUP_M0_WIFI
 #include <SPI.h>
 #include <WiFi101.h>
 #include <driver/source/nmasic.h>
@@ -102,3 +104,5 @@ int setupM0WiFi()
 
   return WiFi.status();
 }
+
+#endif /* ECA_SETUP_M0_WIFI */
