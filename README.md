@@ -17,3 +17,7 @@ This folder collects together a selection of header files that aim to simplify s
 line at the top of your script.
 
 Once you feel more adventurous, you can go into these files and edit them to fit your own needs.
+
+# Links
+
+[The Digital Development Resource List](https://eu01.alma.exlibrisgroup.com/leganto/public/44UOE_INST/lists/18896877830002466?auth=SAML)
