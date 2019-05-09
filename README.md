@@ -1,10 +1,10 @@
 # arduino-examples
 
-A collection of example sketches and function libraries for the arduino/adafruit novice
+Documentation and example for the Arduino Uno kits available on bookit.
 
 ## About
 
-This repository hopes to collect together some examples of code for Arduino that will be relevant to courses across ECA. There is a particular focus towards IoT device based operations as well as communicating with other environements like MaxMSP and Processing.
+This repository hopes to collect together some examples of code for Arduino that will be relevant to courses across ECA. There is a particular focus towards IoT device based operations as well as communicating with other environments like MaxMSP and Processing.
 
 ### examples
 
