@@ -1,6 +1,10 @@
+/*
+   EEPROM Test: Basic EEPROM functionality
+*/
 #include <EEPROM.h>
+//====================================================================
 const char *message = "Congrats! you've learned to use the EEPROM";
-
+//====================================================================
 void setup()
 {
   Serial.begin(9600);
@@ -18,12 +22,12 @@ void setup()
     EEPROM[i] = message[i];
     j = i;
   }
-  EEPROM[j+1] = '\n';
-  EEPROM[j+2] = '\0';
+  EEPROM[j + 1] = '\n';
+  EEPROM[j + 2] = '\0';
   Serial.print("\nPress the Reset Button\n");
-}
-
+}//====================================================================
 void loop()
 {
 
 }
+//====================================================================
